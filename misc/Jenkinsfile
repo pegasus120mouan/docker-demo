@@ -12,7 +12,7 @@ node {
      }
    }
    stage('docker build/push') {
-     docker.withRegistry('https://index.docker.io/v2/', 'pegasus120mouan') {
+     docker.withRegistry('https://index.docker.io/v2/', 'Cfisher@@2020') {
        def app = docker.build("pegasus120mouan/docker-nodejs-demo:${commit_id}", '.').push()
      }
    }
